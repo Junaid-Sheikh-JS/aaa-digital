@@ -1,5 +1,30 @@
-:root {
-    --primary-color: #3490dc;
-    --secondary-color: #ffed4a;
-    --accent-color: #e3342f;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Orbitron", serif; 
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: #321F5C;
+}
+
+.category{
+    background: linear-gradient(159deg, #13072E, #3D1794);
+    width: 100%;
+    display: inline;
+    padding: 7px;
+    font-size: 12px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 55px;
+    text-transform: uppercase;
+}
+/* 
+.clash-font{
+    
+} */
