@@ -21,6 +21,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -105,10 +107,10 @@
 
 
     <!-- Hero Section -->
-    <section class="w-[90%] m-auto py-12 pt-24  flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+    <section class="w-[]  m-auto py-12  pt-24  flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
         <!-- Left Content -->
-        <div class="max-w- text-center md:text-left">
-            <h1 class="text-[#FFFFFF] text-3xl md:text-[55px] font-[800] leading-[66px] font-['Orbitron']">
+        <div class="ml-16 mt-10 pt-14 text-center md:text-left">
+            <h1 class="text-[#FFFFFF] text-2xl md:text-[55px] font-[800] leading-[66px] font-['Orbitron']">
                 Achieve Results-Driven Growth and Transform <br>
                 <span class="text-yellow-400">Brand Online</span>
             </h1>
@@ -116,7 +118,7 @@
                 data-backed strategies designed <br> to elevate your brand and achieve.</p>
             <button
                 class="mt-6 flex items-center bg-transparent hover:bg-yellow-500 text-[700] text-[#FFFFFF] border font-bold py-3 px-6 rounded-full shadow-lg w-full md:w-auto duration-200">
-                Explore Now <span class="ml-2 text- w-6 text-[#190934] rounded-full bg-[#F4D000]">
+                Explore Now <span class="ml-3 text- w-6 text-[#190934] rounded-full bg-[#F4D000]">
                     <i class="fa-solid fa-arrow-right "></i>
                 </span>
             </button>
@@ -142,15 +144,15 @@
 
         <!-- Right Content -->
         <div class="relative flex justify-center w-full max-w-lg">
-            <img class="w-[] h-[]" src="./public/Element.png" alt="VR Experience" class="w-full rounded-lg shadow-lg">
+            <img class="w-[] h-[]" src="./assets/images/heroElement.png" alt="VR Experience" class="w-full rounded-lg shadow-lg">
 
             <!-- Floating Cards -->
             <div class="absolute top-[290px] left-2 md:left-10  text-white p-3 rounded-lg shadow-lg w-40 text-center">
-                <img src="./public/hero-img2.jpeg" alt="">
+                <img src="./assets/images/hero-img2.jpeg" alt="">
             </div>
 
             <div class="absolute top-52 right-2 md:right-20 text-white p-3 rounded-lg shadow-lg w-32 text-center">
-                <img class="w-[200px]" src="./public/hero-img3.jpeg" alt="">
+                <img class="w-[200px]" src="./assets/images/hero-img3.jpeg" alt="">
             </div>
         </div>
     </section>
@@ -222,9 +224,9 @@
 
 
     <!-- Testimonial Section -->
-    <section class="mx-2 sm:mx-10 py-7 rounded-2xl bg-cover relative ">
-        <button class="bg-white text-black font-semibold py-2 px-4 rounded-full mb-4 uppercase">View Reviews</button>
-        <h2 class="text-3xl md:text-5xl font-bold">Hear from Our <span class="text-yellow-400">Success Stories</span>
+    <section class="mx-2 sm:mx-10 py-7 rounded-2xl bg-cover relative text-center">
+        <button class="category w-32">View Reviews</button>
+        <h2 class="text-3xl md:text-5xl font-bold text-[#FFFFFF]">Hear from Our <span class="text-yellow-400">Success Stories</span>
         </h2>
         <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Real clients, real results. Discover how we’ve partnered with
             brands like yours to deliver measurable success.</p>
@@ -247,7 +249,7 @@
     <section class="w-[90%] m-auto py-12 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
         <!-- Left Content -->
         <div class="max-w-lg text-center md:text-left md:mt-6">
-            <span class="text-[14px] font-[700] uppercase tracking-widest text-gray-300">Brand Loyalty</span>
+            <span class="category">Brand Loyalty</span>
             <h1 class="text-3xl md:text-[40px] leading-[55px] text-[#FFFFFF] font-[500] mt-2">Drive Loyalty with
                 <span class="text-yellow-400">Meaningful Connections</span>
             </h1>
@@ -267,7 +269,7 @@
             <div class="relative p-6 rounded-xl shadow-lg w-full max">
 
                 <div class="mt-4 flex justify- items-">
-                    <img src="./public/img5.png" class="w-[700px] h-[450px]" alt="">
+                    <img src="./assets/images/img5.png" class="w-[700px] h-[450px]" alt="">
                 </div>
 
             </div>
@@ -524,8 +526,8 @@
             const swiperSlide = document.createElement("div");
             swiperSlide.className = "swiper-slide";
             swiperSlide.innerHTML = `        
-                <section class="bg-">
-                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <section class="bg- overflow-scroll-hidden">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-scroll-hidden">
                         <div class="bg-[#1C005F] rounded-xl p-3 sm:p-6 h-full sm:h-[15rem] mb-2 shadow-lg">
                             
                             <div class="flex items-center absolute pt-">
@@ -537,8 +539,8 @@
                                                                        
                                 </div>
                                 <div class = "relative right-12">
-                                        <img class = "w-52" src = "./public/icon.png"/>
-                                 </div> 
+                                    <img class = "w-52" src = "./public/icon.png"/>
+                                </div> 
                                 
                             </div>
                             <div class = "relative top-20 mt-5">
