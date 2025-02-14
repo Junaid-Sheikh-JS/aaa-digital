@@ -1,19 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
-    font-family: "Orbitron", serif; 
     font-optical-sizing: auto;
     font-style: normal;
     background: #321F5C;
+    font-family: 'Clash Display', sans-serif;
 }
 
-.category{
+.orbitron-font {
+    font-family: "Orbitron", serif;
+}
+
+.clash-font {
+    font-family: 'Clash Display', sans-serif;    
+}
+
+
+
+
+/* category styles */
+
+.category {
     background: linear-gradient(159deg, #13072E, #3D1794);
     width: 100%;
     display: inline;
@@ -24,6 +38,99 @@ html, body {
     border-radius: 55px;
     text-transform: uppercase;
 }
+
+/* swiper styles */
+
+.swiper-slide {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Default styling for non-centered slides */
+.swiper-slide .slide-content {
+    @apply opacity-30 scale-90;
+}
+
+/* Styling for the active (centered) slide with inner shadow */
+.swiper-slide-active .slide-content {
+    /* @apply opacity-100 scale-105 border border-orange-500 shadow-[inset_0_4px_10px_rgba(255,165,0,0.5)]; */
+    box-shadow: inset 0 0 22px 0px #ffa50080;
+}
+
+
+.carousel-button {
+            background-color: #F4D000;
+            color: #FFFFFF;
+        }
+
+        .carousel-button:hover {
+            color: #F4D000;
+            background-color: #FFFFFF;
+        }
+
+        .carousel-wrapper {
+            transition: transform 1s ease-in-out;
+            position: relative;
+            /* Ensure it doesn't overlap with the indicators */
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 30;
+            display: flex;
+            gap: 10px;
+        }
+
+        .carousel-indicator {
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+
+        .carousel-indicator.active {
+            background-color: #F4D000;
+        }
+
+
+        @media (max-width: 768px) {
+            .carousel-wrapper {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .carousel-wrapper img {
+                width: 100%;
+                height: auto;
+            }
+
+            .fixed-mobile-device {
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .carousel-wrapper {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .carousel-wrapper img {
+                width: 100%;
+                height: auto;
+            }
+
+            .fixed-mobile-device {
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
 /* 
 .clash-font{
     
