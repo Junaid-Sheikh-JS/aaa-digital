@@ -11,6 +11,13 @@
 
     <link rel="stylesheet" href="styles/styles.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Style/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
+</head>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -96,6 +103,61 @@
         </div>
     </nav>
 
+
+    <!-- Hero Section -->
+    <section class="w-[90%] m-auto py-12 pt-24  flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+        <!-- Left Content -->
+        <div class="max-w- text-center md:text-left">
+            <h1 class="text-[#FFFFFF] text-3xl md:text-[55px] font-[800] leading-[66px] font-['Orbitron']">
+                Achieve Results-Driven Growth and Transform <br>
+                <span class="text-yellow-400">Brand Online</span>
+            </h1>
+            <p class="text-[#FFFFFF] opacity-[60%] text-[14px] mt-4 font- orbitHeading">Drive real growth with
+                data-backed strategies designed <br> to elevate your brand and achieve.</p>
+            <button
+                class="mt-6 flex items-center bg-transparent hover:bg-yellow-500 text-[700] text-[#FFFFFF] border font-bold py-3 px-6 rounded-full shadow-lg w-full md:w-auto duration-200">
+                Explore Now <span class="ml-2 text- w-6 text-[#190934] rounded-full bg-[#F4D000]">
+                    <i class="fa-solid fa-arrow-right "></i>
+                </span>
+            </button>
+
+            <!-- Testimonials -->
+            <section
+                class=" m-auto px- py-12 flex flex-row gap-2 items-center md:flex-row space-y-6 md:space-x-3 md:space-y-0">
+                <div class="bg-[#1A144A] p-6 rounded-xl shadow-lg w-full max-w-sm text-center md:text-left">
+                    <h3 class="text-white font-semibold">Pavel Somin</h3>
+                    <p class="text-gray-400 text-sm">Founder ABC</p>
+                    <p class="text-gray-300 text-xs mt-2">This is my first time working with a marketing company and I
+                        had a fantastic experience. Business is doing better than ever and I am very grateful for
+                        Toolaf.</p>
+                </div>
+                <div class="bg-[#1A144A] p-6 rounded-xl shadow-lg w-full max-w-sm text-center md:text-left">
+                    <h3 class="text-white font-semibold">Kezia Aley</h3>
+                    <p class="text-gray-400 text-sm">Influencer</p>
+                    <p class="text-gray-300 text-xs mt-2">Working with this team transformed our brand’s online
+                        presence. Their strategies boosted our engagement and helped us reach new audiences.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Content -->
+        <div class="relative flex justify-center w-full max-w-lg">
+            <img class="w-[] h-[]" src="./public/Element.png" alt="VR Experience" class="w-full rounded-lg shadow-lg">
+
+            <!-- Floating Cards -->
+            <div class="absolute top-[290px] left-2 md:left-10  text-white p-3 rounded-lg shadow-lg w-40 text-center">
+                <img src="./public/hero-img2.jpeg" alt="">
+            </div>
+
+            <div class="absolute top-52 right-2 md:right-20 text-white p-3 rounded-lg shadow-lg w-32 text-center">
+                <img class="w-[200px]" src="./public/hero-img3.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
     <!-- Driven by purpose section -->
     <section
         class="flex flex-col md:flex-row justify-between items-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
@@ -155,6 +217,66 @@
             </div>
         </div>
     </section>
+
+
+
+
+    <!-- Testimonial Section -->
+    <section class="mx-2 sm:mx-10 py-7 rounded-2xl bg-cover relative ">
+        <button class="bg-white text-black font-semibold py-2 px-4 rounded-full mb-4 uppercase">View Reviews</button>
+        <h2 class="text-3xl md:text-5xl font-bold">Hear from Our <span class="text-yellow-400">Success Stories</span>
+        </h2>
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Real clients, real results. Discover how we’ve partnered with
+            brands like yours to deliver measurable success.</p>
+
+        <!-- <div class="flex justify-center items-center flex-wrap flex-1" id="categories">
+                Categories will be dynamically generated here
+            </div> -->
+        </div>
+        <section class="w-full z-[400] container mx-auto px-4 py-14 bg-[#]">
+            <div class="swiper-container overflow-x-hidden bg-[] opacity-[]">
+                <div class="swiper-wrapper " id="swiper-wrapper">
+                    <!-- Testimonial cards will be dynamically generated here -->
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- brand loyalty -->
+    <section class="w-[90%] m-auto py-12 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+        <!-- Left Content -->
+        <div class="max-w-lg text-center md:text-left md:mt-6">
+            <span class="text-[14px] font-[700] uppercase tracking-widest text-gray-300">Brand Loyalty</span>
+            <h1 class="text-3xl md:text-[40px] leading-[55px] text-[#FFFFFF] font-[500] mt-2">Drive Loyalty with
+                <span class="text-yellow-400">Meaningful Connections</span>
+            </h1>
+            <p class="text-gray-400 mt-7">We go beyond transactions to build lasting relationships between your
+                brand and your customers. Our strategies foster loyalty by creating genuine connections that matter.
+            </p>
+            <div class="mt-16">
+                <button
+                    class="mt-10 bg-yellow-400 text-black font-bold py-3 px-6 rounded-full shadow-lg w-full md:w-auto">Get
+                    Started</button>
+            </div>
+
+        </div>
+
+        <!-- Right Content -->
+        <div class="w- md:w-auto flex justify-center">
+            <div class="relative p-6 rounded-xl shadow-lg w-full max">
+
+                <div class="mt-4 flex justify- items-">
+                    <img src="./public/img5.png" class="w-[700px] h-[450px]" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
 
     <!-- blog section  -->
     <section class="container mx-auto px-4 py-12 text-white bg-[#321F5C]">
@@ -265,6 +387,208 @@
 
 
     <script src="script/app.js"></script>
+
+
+    <script>
+        const testimonials = [
+            {
+                name: "Pavel Solomin",
+                role: "CEO, LearnSphere Inc.",
+                content:
+                    "We needed a high-performing, SEO-friendly website for our education platform, and they delivered exactly what we envisioned. The new design has significantly boosted engagement and trust among our users.",
+                image:
+                    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+                category: "Web Development",
+            },
+            {
+                name: "Jason T.",
+                role: "Co-Founder, EcoVolt Systems",
+                content:
+                    "Their team built a robust website for our renewable energy solutions company. It’s sleek, responsive, and showcases our services perfectly. Couldn’t be happier!",
+                image:
+                    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80",
+                category: "Web Development",
+            },
+            {
+                name: "Sarah K.",
+                role: "Owner, HandyNest",
+                content:
+                    "We were looking for an easy-to-use mobile app for our home services platform, and they exceeded our expectations. The app runs smoothly on both iOS and Android, and our customers are loving it.",
+                image:
+                    "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80",
+                category: "Mobile App Development",
+            },
+            {
+                name: "David M.",
+                role: "CTO, RideWave Rentals",
+                content:
+                    "The app they created for our bike rental business is intuitive and feature-rich. It’s helped us improve bookings and deliver a better customer experience.",
+                image:
+                    "https://media.istockphoto.com/id/1476171646/photo/young-woman-ready-for-job-business-concept.jpg?s=612x612&w=0&k=20&c=DaYoIWA0PemBp_gwRflBhZH193puk3z-chb7N12adfY=",
+                category: "Mobile App Development",
+            },
+            {
+                name: "Lisa P.",
+                role: "Founder, RadiantGlow Skincare",
+                content:
+                    "Their team launched a stunning Shopify store for our skincare brand, and it’s been a game-changer. Sales have been consistently growing since day one!",
+                image:
+                    "https://www.shutterstock.com/image-photo/confident-smiling-middle-aged-business-600nw-2451544833.jpg",
+                category: "E-Commerce Solutions",
+            },
+            {
+                name: "Ryan S.",
+                role: "Manager, HavenLiving Interiors",
+                content:
+                    "Our online furniture store needed an overhaul, and they delivered a platform that’s fast, secure, and optimized for sales. It’s a huge win for our business.",
+                image:
+                    "https://www.shutterstock.com/image-photo/headshot-smiling-handsome-hindu-man-260nw-2115297203.jpg",
+                category: "E-Commerce Solutions",
+            },
+            {
+                name: "Olivia W.",
+                role: "Marketing Director, UrbanScape Designs",
+                content:
+                    "Thanks to their SEO expertise, our website now ranks on the first page for several competitive keywords. We’ve seen a 40% increase in organic traffic!",
+                image:
+                    "https://img.freepik.com/free-photo/portrait-businesswoman-window-2_1262-1491.jpg",
+                category: "SEO & Digital Marketing",
+            },
+            {
+                name: "Brian L.",
+                role: "Owner, FlexPro Fitness",
+                content:
+                    "Their social media strategy and ad management have given us the exposure we needed. Leads are pouring in, and we’re thrilled with the results.",
+                image:
+                    "https://i.pinimg.com/originals/37/4c/c0/374cc0b39ee69f4f2b3eb29de7aea684.jpg",
+                category: "SEO & Digital Marketing",
+            },
+            {
+                name: "Natalie H.",
+                role: "Product Manager, StreamView Media",
+                content:
+                    "Our app’s new design is a hit with our users! It’s intuitive, visually stunning, and has significantly improved retention rates.",
+                image:
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmtFvVKz3jmx8wSX7U5WiK-g6tN7pVr4lkCA&s",
+                category: "UI/UX Design",
+            },
+            {
+                name: "Kevin D.",
+                role: "CEO, BistroCraft",
+                content:
+                    "They redesigned our website with a clean, modern look, making it much easier for customers to navigate. The results have been fantastic.",
+                image:
+                    "https://www.shutterstock.com/image-photo/headshot-satisfied-cheerful-handsome-man-260nw-793117360.jpg",
+                category: "UI/UX Design",
+            },
+            {
+                name: "Sophia G.",
+                role: "Owner, LuxeNest Decor",
+                content:
+                    "Our website’s loading time was a major issue, but after their optimization, it’s blazing fast. The improvement in user experience is incredible.",
+                image:
+                    "https://st4.depositphotos.com/4678277/28917/i/450/depositphotos_289173464-stock-photo-close-up-photo-amazing-he.jpg",
+                category: "Performance Optimization",
+            },
+            {
+                name: "Mark P.",
+                role: "Founder, AutoNext",
+                content:
+                    "They streamlined our site’s performance, and the difference is clear. Both our traffic and conversions have seen a noticeable boost.",
+                image:
+                    "https://t4.ftcdn.net/jpg/02/19/63/31/360_F_219633151_BW6TD8D1EA9OqZu4JgdmeJGg4JBaiAHj.jpg",
+                category: "Performance Optimization",
+            },
+            {
+                name: "Laura C.",
+                role: "Operations Manager, FreshFields Agriculture",
+                content:
+                    "Their custom software solution has completely transformed our supply chain operations. It’s efficient, reliable, and easy to use.",
+                image:
+                    "https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=",
+                category: "Custom Software Solutions",
+            },
+            {
+                name: "Ethan J.",
+                role: "Director, PrimeTrack Logistics",
+                content:
+                    "We had a complex workflow issue that required a unique solution, and they nailed it. The software has saved us countless hours and improved productivity.",
+                image:
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjDGMp734S91sDuUFqL51_xRTXS15iiRoHew&s",
+                category: "Custom Software Solutions",
+            },
+        ];
+
+        const swiperWrapper = document.getElementById("swiper-wrapper");
+        testimonials.forEach((testimonial) => {
+            const swiperSlide = document.createElement("div");
+            swiperSlide.className = "swiper-slide";
+            swiperSlide.innerHTML = `        
+                <section class="bg-">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="bg-[#1C005F] rounded-xl p-3 sm:p-6 h-full sm:h-[15rem] mb-2 shadow-lg">
+                            
+                            <div class="flex items-center absolute pt-">
+                                <img src="${testimonial.image}" alt="${testimonial.name}" class="w-12 h-12 rounded-full object-cover mr-4">
+                                <div class = "">
+                                    
+                                    <code class="font-bold text-[#FFFFFF] text-base">${testimonial.name}</code>
+                                    <div><code class="text-[#FFFFFF] opacity-[80%] font-[400] leading-[19px]">${testimonial.role}</code></div>
+                                                                       
+                                </div>
+                                <div class = "relative right-12">
+                                        <img class = "w-52" src = "./public/icon.png"/>
+                                 </div> 
+                                
+                            </div>
+                            <div class = "relative top-20 mt-5">
+                                        <p class="text-[#FFFFFF] text-xs leading-[24px]">This is my first time working with a marketing company and I had a fantastic experience. Business is doing better than ever and I am very grateful for Toolaf.</p>
+                                    </div>
+                        </div>
+                        
+                    </div>
+                </section> `;
+            swiperWrapper.appendChild(swiperSlide);
+        });
+        const swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                740: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+        // Ensure autoplay stops when hovering
+        const swiperContainer = document.querySelector('.swiper-container');
+        swiperContainer.addEventListener('mouseenter', () => {
+            swiper.autoplay.stop(); // Stop autoplay
+        });
+        swiperContainer.addEventListener('mouseleave', () => {
+            swiper.autoplay.start(); // Resume autoplay
+        });
+    </script>
+
+
 </body>
 
 </html>
