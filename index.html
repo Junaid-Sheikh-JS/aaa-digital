@@ -11,9 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
 
@@ -27,8 +24,6 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
@@ -72,8 +67,9 @@
                 </div>
 
                 <!-- Hamburger Menu (for mobile) -->
-                <button  id="hamburgerBtn" class="md:hidden flex text-white">
-                    <img id="hamburgerIcon" src="assets/icons/menu.png" class="w-6" alt="Hamburger Menu">
+                <button id="hamburgerBtn" class="md:hidden flex text-white">
+                    <img id="hamburgerIcon" class="w-14 " src="assets/icons/hemburger-menu.png" class="w-6"
+                        alt="Hamburger Menu">
                     <span id="closeIcon" class="hidden w-12 text-xl font-bold">X</span>
                 </button>
 
@@ -99,8 +95,8 @@
                 <div class="px-3 py-2">
                     <a href="/contact.html">
                         <button type="submit"
-                            class="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-[#190934] bg-[#F4D000] backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-white hover:text-[#F4D000] font-bold before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-none rounded-full group">
-                            Get in touch
+                            class="clash-font flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-[#190934] bg-[#F4D000] backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-white hover:text-[#F4D000] font-bold before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-none rounded-full group">
+                            Get Started
                             <svg class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-[#190934] ease-linear duration-300 rounded-full border border-[#190934] group-hover:border-none p-2 rotate-45"
                                 viewBox="0 0 16 19">
                                 <path
@@ -117,29 +113,30 @@
 
     <!-- Hero Section -->
     <section
-        class="w-[]  m-auto py-12  pt-   flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+        class=" m-auto py-12 flex flex-col-reverse md:flex-row items-center justify-between space-y-8 md:space-y-0">
         <!-- Left Content -->
-        <div class="ml-16 mt-10 pt-14 text-center md:text-left">
-            <h1 class="text-[#FFFFFF] text-2xl md:text-[54px] font-[800] leading-[66px] font-['Orbitron']">
+        <div class="md:ml-16  pt-14 text-center md:text-left">
+            <h1 class="text-[#FFFFFF] text-2xl md:text-[54px] font-[800] md:leading-[56px] font-['Orbitron']">
                 Achieve Results-Driven <br> Growth and Transform <br>
                 <span class="text-yellow-400">Brand Online</span>
             </h1>
             <p class="text-[#FFFFFF] opacity-[60%] text-[14px] mt-4 font- clash-font">Drive real growth with
                 data-backed strategies designed <br> to elevate your brand and achieve.</p>
 
-            <hr class="mt-10 w-[50%] border-[#FFFFFF] border-2 border-dashed border-opacity-50">
-            <div class="text-center">
+            <hr
+                class="mt-10 w-[60%] border-[#FFFFFF] border-2 border-dashed border-opacity-50 md:mx-0 mx-auto max-w-7xl md:max-w-full">
+            <div>
                 <button
-                class="mt-6 flex items-center text-center bg-transparent hover:bg-yellow-500 text-[700] text-[#FFFFFF] border font-bold py-3 px-6 rounded-full shadow-lg  md:w-auto duration-200">
-                Explore Now <span class="ml-3 text- w-6 text-[#190934] rounded-full bg-[#F4D000]">
-                    <i class="fa-solid fa-arrow-right "></i>
-                </span>
-            </button>
+                    class="mt-6 flex items-center text-center bg-transparent hover:bg-yellow-500 text-[700] text-[#FFFFFF] border font-bold py-3 px-6 rounded-full shadow-lg  md:w-auto duration-200 md:mx-0 mx-auto max-w-7xl md:max-w-full">
+                    Explore Now <span class="ml-3 text- w-6 text-[#190934] rounded-full bg-[#F4D000]">
+                        <i class="fa-solid fa-arrow-right "></i>
+                    </span>
+                </button>
             </div>
 
             <!-- hero-cards -->
             <section
-                class=" m-auto px- py-12 flex flex-row gap-2 items-center md:flex-row space-y-6 md:space-x-3 md:space-y-0 clash-font ">
+                class=" m-auto max-w-7xl py-12 flex flex-row gap-2 items-center md:flex-row  md:space-x-3 md:space-y-0 clash-font ">
                 <div class="bg-[#1A144A] p-6 rounded-xl shadow-lg w-full max-w-sm text-center md:text-left">
                     <h3 class="text-white font-semibold">Pavel Somin</h3>
                     <p class="text-gray-400 text-sm">Founder ABC</p>
@@ -191,7 +188,7 @@
 
     <!-- Driven by purpose section -->
     <section
-        class="clash-font flex flex-col md:flex-row justify-between items-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        class="clash-font flex flex-col md:gap-24 lg:gap-44  md:flex-row justify-between items-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
 
         <!-- Left Image -->
         <div class="w-full md:w-1/2 flex justify-center ">
@@ -204,7 +201,7 @@
             <h1 class="text-2xl text-white sm:text-4xl lg:text-5xl font-[500] my-4">
                 Empowering <span class="text-[#F4D000]">Brands</span> <br> with Purposeful
             </h1>
-            <p class="text-[#cecece] text-sm md:max-w-md ">
+            <p class="text-[#ffff] text-sm md:max-w-md ">
                 Empower brands with strategic, impactful marketing solutions tailored to meet the unique needs of each
                 client.
                 As a team of passionate digital marketers, we’re committed to blending creativity with data-driven
@@ -219,7 +216,7 @@
                 </li>
                 <li class="flex items-center ">
                     <img src="assets/icons/Database.png" class="bg-yellow-500 p-2 rounded-full mr-2 w-8 h-8" alt="">
-                    <span class="text-white">Strategies for Unique Brand Goals</span>
+                    <span class="text-[#cecece]">Strategies for Unique Brand Goals</span>
                 </li>
                 <li class="flex items-center ">
                     <img src="assets/icons/TreeStructure.png" class="bg-yellow-500 p-2 rounded-full mr-2 w-8 h-8"
@@ -238,7 +235,7 @@
             <p class="category font-[500] text-[14px]">Expert Solutions</p>
             <h1 class="text-white text-4xl my-4  font-[500]">Unlock Your Brand’s <span class="text-[#F4D000]">Full
                     Potential</span></h1>
-            <p class="text-[#cecece] text-sm max-w-lg ">Empower brands with strategic, impactful marketing solutions
+            <p class="text-[#ffff] text-sm max-w-lg ">Empower brands with strategic, impactful marketing solutions
                 tailored to meet the unique needs of each client. As a team of passionate digital marketers.</p>
         </center>
 
@@ -249,12 +246,13 @@
         </div>
     </section>
 
-      <!-- Testimonial Section -->
-      <section class="clash-font mx-2 sm:mx-10 py-7 rounded-2xl bg-cover relative text-center">
+    <!-- Testimonial Section -->
+    <section class="clash-font mx-2 sm:mx-10 py-7 rounded-2xl bg-cover relative text-center">
         <button class="category w-32 font-[500] text-[14px]">View Reviews</button>
-        <h2 class="text-3xl md:text-5xl font-[500] text-[#FFFFFF]">Hear from Our <span class="text-yellow-400">Success Stories</span>
+        <h2 class="text-3xl md:text-5xl font-[500] text-[#FFFFFF]">Hear from Our <span class="text-yellow-400">Success
+                Stories</span>
         </h2>
-        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Real clients, real results. Discover how we’ve partnered with
+        <p class="text-[#ffff] mt-4 max-w-2xl mx-auto">Real clients, real results. Discover how we’ve partnered with
             brands like yours to deliver measurable success.</p>
 
         <!-- <div class="flex justify-center items-center flex-wrap flex-1" id="categories">
@@ -272,19 +270,20 @@
 
 
     <!-- brand loyalty -->
-    <section class="clash-font w-[90%] m-auto py-12 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+    <section
+        class="clash-font max-w-7xl m-auto py-12 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
         <!-- Left Content -->
         <div class="max-w-lg text-center md:text-left md:mt-6">
             <span class="category font-[500] text-[14px]">Brand Loyalty</span>
             <h1 class="text-3xl md:text-[40px] leading-[55px] text-[#FFFFFF] font-[500] mt-2">Drive Loyalty with
                 <span class="text-yellow-400">Meaningful Connections</span>
             </h1>
-            <p class="text-gray-400 mt-7">We go beyond transactions to build lasting relationships between your
+            <p class="text-[#ffff] mt-7">We go beyond transactions to build lasting relationships between your
                 brand and your customers. Our strategies foster loyalty by creating genuine connections that matter.
             </p>
             <div class="mt-16">
                 <button
-                    class="mt-10 bg-[#F4D000] text-[18px] text-black font-[600]  py-3 px-6 rounded-full shadow-lg w-full md:w-auto hover:bg-transparent duration-200 hover:text-[#FFFFFF] hover:border-2 ">Get
+                    class="mt-10 bg-[#F4D000] text-[18px] text-[#0000] font-[600]  py-3 px-6 rounded-full shadow-lg w-full md:w-auto hover:bg-transparent duration-200 hover:text-[#FFFFFF] hover:border-2 ">Get
                     Started</button>
             </div>
 
@@ -308,9 +307,10 @@
     <section class="clash-font container mx-auto px-4 py-12 text-white bg-[#321F5C]">
         <center class="head-sec">
             <p class="category font-[500] text-[14px]">Latest Blog</p>
-            <h1 class="text-white text-4xl my-4 font-[500]">Explore Latest in <span class="text-[#F4D000]">Digital Marketing</span>
+            <h1 class="text-white text-4xl my-4 font-[500]">Explore Latest in <span class="text-[#F4D000]">Digital
+                    Marketing</span>
             </h1>
-            <p class="text-[#cecece] text-sm max-w-lg">
+            <p class="text-[#ffff] text-sm max-w-lg">
                 Stay informed and inspired with our expert insights, latest trends, and actionable tips in digital
                 marketing.
             </p>
@@ -414,10 +414,10 @@
     </footer>
 
 
-  
 
 
-<!--     
+
+    <!--     
     <script>
         const testimonials = [
     {
@@ -616,7 +616,7 @@ swiperContainer.addEventListener('mouseleave', () => {
     swiper.autoplay.start(); // Resume autoplay
 });
     </script> -->
-          <script src="script/app.js"></script>
+    <script src="script/app.js"></script>
 
 
 

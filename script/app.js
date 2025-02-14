@@ -64,10 +64,10 @@ if (gridContainer) {
         cardElement.innerHTML = `
         <div class="text-4xl">${card.icon}</div>
         <h2 class="mt-4 text-xl text-white font-semibold">${card.title}</h2>
-        <p class="mt-2 text-gray-300">${card.description}</p>
+        <p class="mt-2 text-gray-300 font-light">${card.description}</p>
         <button
         class="py-2 flex justify-center rounded-md text-md group hover:text- items-center transition-colors relative inline-flex justify-centent-center items-center text-sm md:text-base font-medium tracking-wide cursor-pointer transition-all duration-300 ease-in rounded-lg 
-        text-gray-400 font-bold flex items-center hover:text-yellow-300">
+        text-[#ffff] font-bold flex items-center hover:text-yellow-300">
         <span class="uppercase">Explore Now</span>
         <svg xmlns="http://www.w3.org/2000/svg"
             class="ml-2 w-7 border-2 hover:border-yellow-400 rounded-full p-1  group-hover:translate-x-1 transition-transform" fill="none"
