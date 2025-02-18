@@ -63,14 +63,14 @@ if (gridContainer) {
         cardElement.className = "p-6 rounded-2xl flex flex-col items-start";
         cardElement.innerHTML = `
         <div class="text-4xl">${card.icon}</div>
-        <h2 class="mt-4 text-xl text-white font-semibold">${card.title}</h2>
-        <p class="mt-2 text-gray-300 font-light">${card.description}</p>
+        <h2 class="mt-4 text-[18px] text-white clash-font font-medium">${card.title}</h2>
+        <p class="mt-2 text-gray-300 text-sm font-light clash-font">${card.description}</p>
         <button
         class="py-2 flex justify-center rounded-md text-md group hover:text- items-center transition-colors relative inline-flex justify-centent-center items-center text-sm md:text-base font-medium tracking-wide cursor-pointer transition-all duration-300 ease-in rounded-lg 
         text-[#ffff] font-bold flex items-center hover:text-yellow-300">
-        <span class="uppercase">Explore Now</span>
+        <span class="uppercase clash-font text-sm">Explore Now</span>
         <svg xmlns="http://www.w3.org/2000/svg"
-            class="ml-2 w-7 border-2 hover:border-yellow-400 rounded-full p-1  group-hover:translate-x-1 transition-transform" fill="none"
+            class="ml-2 w-5 border-2 hover:border-yellow-400 rounded-full p-  group-hover:translate-x-1 transition-transform" fill="none"
             viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M5 12h14M12 5l7 7-7 7"></path>
@@ -116,14 +116,14 @@ blogs.forEach((blog) => {
 
     blogCard.innerHTML = `
         <div class="bg-gray-300 h-40 rounded-lg mb-4"></div>
-        <h3 class="text-lg font-semibold mb-2">${blog.title}</h3>
+        <h3 class="text-lg clash-font font-[500] mb-2">${blog.title}</h3>
          <div class="flex justify-between items-center pt-10">
            <div>
-            <p class="text-xs font-bold text-gray-400">${blog.category}</p>
-            <p class="text-xs text-gray-400 mb-4">${blog.time}</p>
+            <p class="text-xs font-[500] text-[#FFFFFF] clash-font">${blog.category}</p>
+            <p class="text-[14px] font-[500] text-gray-400 mb-4 clash-font">${blog.time}</p>
             </div>
         <button class="px-3 py-2 rounded-full
-        max-w-32 text-sm  bg-transparent items-center justify-center flex  shadow-lg  text-[#FFFFFF]   duration-500 cursor-pointer active:scale-[0.98] border border-white text-white hover:bg-yellow-400 hover:text-black font-bold hover:border-none  
+        max-w-32 text-sm clash-font bg-transparent items-center justify-center flex  shadow-lg  text-[#FFFFFF]   duration-500 cursor-pointer active:scale-[0.98] border border-white text-white hover:bg-yellow-400 hover:text-black font-[500] hover:border-none  
         ">Learn More</button>
          </div>
     `;
@@ -413,14 +413,12 @@ testimonials.forEach((testimonial) => {
                             <div><code class="text-[#FFFFFF] opacity-[80%] font-[400] leading-[19px]">${testimonial.role}</code></div>
                                                                
                         </div>
-                        <div class = "relative right-12">
-                            <img class = "w-52" src = "./public/icon.png"/>
-                        </div> 
+                         
                         
                     </div>
-                    <div class = "mt-5 text-left clash-font">
-                                <p class="text-[#FFFFFF] text-xs leading-[24px]">This is my first time working with a marketing company and I had a fantastic experience. Business is doing better than ever and I am very grateful for Toolaf.</p>
-                            </div>
+                    <div class = "mt-14 text-left clash-font">
+                        <p class="text-[#FFFFFF] text-xs leading-[24px]">This is my first time working with a marketing company and I had a fantastic experience. Business is doing better than ever and I am very grateful for Toolaf.</p>
+                    </div>
                 </div>
                 
             </div>
