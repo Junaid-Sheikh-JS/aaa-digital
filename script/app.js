@@ -44,14 +44,14 @@ document.addEventListener("click", (event) => {
 
 // services section logic
 const cardData = [
-    { title: "We grow with Tailored Digital Strategies", description: "Helping you navigate the online landscape with a roadmap for success.", icon: "\uD83D\uDCFA" },
-    { title: "Let's Build Your Brand on Social Media", description: "Building your brand presence on social platforms, engaging your audience.", icon: "\uD83D\uDC8E" },
-    { title: "Boost Your Visibility with Effective SEO Solutions", description: "Enhancing your website's visibility with SEO techniques that increase search rankings.", icon: "\uD83D\uDCCB" },
-    { title: "Conversions Through Personalized Email", description: "Designing personalized email campaigns that nurture leads, build customer.", icon: "\uD83D\uDCC1" },
-    { title: "Content to Captivate Your Audience", description: "Design solutions that leave a lasting impression on your audience.", icon: "\uD83D\uDCE2" },
-    { title: "Maximize Customized E-commerce Solutions", description: "Helping you make informed decisions and optimize your marketing efforts.", icon: "\uD83D\uDCE6" },
-    { title: "Analytics for Smarter Business Decisions", description: "We enhance user experience and improve your digital storefront.", icon: "\uD83D\uDD8A" },
-    { title: "Build Brand with Expert Design Services", description: "Strengthens your brand and effectively supports your marketing goals", icon: "\uD83C\uDF1F" }
+    { title: "We grow with Tailored Digital Strategies", description: "Helping you navigate the online landscape with a roadmap for success.", icon: "assets/icons/service_logo1.png" },
+    { title: "Let's Build Your Brand on Social Media", description: "Building your brand presence on social platforms, engaging your audience.", icon: "assets/icons/service_logo2.png" },
+    { title: "Boost Your Visibility with Effective SEO Solutions", description: "Enhancing your website's visibility with SEO techniques that increase search rankings.", icon: "assets/icons/service_logo3.png" },
+    { title: "Conversions Through Personalized Email", description: "Designing personalized email campaigns that nurture leads, build customer.", icon: "assets/icons/service_logo4.png" },
+    { title: "Content to Captivate Your Audience", description: "Design solutions that leave a lasting impression on your audience.", icon: "assets/icons/service_logo5.png" },
+    { title: "Maximize Customized E-commerce Solutions", description: "Helping you make informed decisions and optimize your marketing efforts.", icon: "assets/icons/service_logo6.png" },
+    { title: "Analytics for Smarter Business Decisions", description: "We enhance user experience and improve your digital storefront.", icon: "assets/icons/service_logo7.png" },
+    { title: "Build Brand with Expert Design Services", description: "Strengthens your brand and effectively supports your marketing.", icon: "assets/icons/service_logo8.png" }
 ];
 
 const gridContainer = document.getElementById("gridContainer");
@@ -62,15 +62,15 @@ if (gridContainer) {
         const cardElement = document.createElement("div");
         cardElement.className = "p-6 rounded-2xl flex flex-col items-start";
         cardElement.innerHTML = `
-        <div class="text-4xl">${card.icon}</div>
+        <img class="w-12 h-12" src=${card.icon} alt="">
         <h2 class="mt-4 text-[18px] text-white clash-font font-medium">${card.title}</h2>
-        <p class="mt-2 text-gray-300 text-sm font-light clash-font">${card.description}</p>
+        <p class="mt-2 text-gray-400 text-sm font-light clash-font">${card.description}</p>
         <button
         class="py-2 flex justify-center rounded-md text-md group hover:text- items-center transition-colors relative inline-flex justify-centent-center items-center text-sm md:text-base font-medium tracking-wide cursor-pointer transition-all duration-300 ease-in rounded-lg 
-        text-[#ffff] font-bold flex items-center hover:text-yellow-300">
+        text-[#cecece] font-bold flex items-center hover:text-yellow-300">
         <span class="uppercase clash-font text-sm">Explore Now</span>
         <svg xmlns="http://www.w3.org/2000/svg"
-            class="ml-2 w-5 border-2 hover:border-yellow-400 rounded-full p-  group-hover:translate-x-1 transition-transform" fill="none"
+            class="ml-2 w-5 border-2 hover:border-yellow-400 rounded-full p-0.5  group-hover:translate-x-1 transition-transform" fill="none"
             viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M5 12h14M12 5l7 7-7 7"></path>
@@ -258,7 +258,7 @@ prevBtn.addEventListener("click", () => {
 });
 
 // // Auto slide every 5 seconds
-setInterval(autoSlide, 3000);
+// setInterval(autoSlide, 3000);
 
 // Initialize the carousel
 updateCarousel();
